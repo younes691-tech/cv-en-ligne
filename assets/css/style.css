@@ -1,0 +1,250 @@
+/* IMPORTATION POLICE LOCALE RALEWAY */
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+/* RESET & BASE */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: #333333;
+  background-color: #e3e3e3;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lato", sans-serif;
+}
+
+/* CONTENEUR PRINCIPAL (1160px centré) */
+.cv-container {
+  width: 1160px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* EN-TÊTE */
+header {
+  background-color: #17abb3;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 2.5rem 4rem;
+}
+
+.header-photo {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.header-photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  object-fit: cover;
+  cursor: zoom-in; /* Effet 2 du brief */
+  transition: transform 0.2s ease;
+}
+
+.header-info {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.header-info h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.job-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem 2.5rem;
+  width: 60%;
+}
+
+.contact-grid a,
+.contact-grid span {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  width: 40%;
+  text-align: left;
+}
+
+.contact-grid i {
+  margin-right: 0.5rem;
+}
+
+/* CORPS PRINCIPAL EN FLEXBOX */
+main {
+  display: flex;
+}
+
+/* COLONNE DE GAUCHE */
+aside {
+  width: 30%;
+  background-color: #f5f5f5;
+  padding: 2.5rem 2rem;
+}
+
+/* COLONNE DE DROITE */
+.main-content {
+  width: 70%;
+  background-color: #ffffff;
+  padding: 2.5rem 3rem;
+}
+
+/* TITRES DE SECTIONS */
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: #17abb3;
+  font-size: 1.35rem;
+  border-bottom: 1px solid #e3e3e3;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+/* LISTES COLONNE GAUCHE */
+aside ul {
+  list-style: none;
+}
+
+.skills-list li,
+.languages-list li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+}
+
+.skills-list span:first-child {
+  font-weight: 700;
+}
+
+.stars {
+  color: #17abb3;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+aside ul.square-list {
+  list-style-type: square;
+  padding-left: 1.2rem;
+}
+
+aside ul.square-list li {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
+aside ul.square-list li::marker {
+  color: #17abb3;
+}
+
+/* SECTION PROFIL */
+.profil p {
+  text-align: justify;
+  text-indent: 2rem;
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+}
+
+/* FORMATIONS, STAGES, EXPÉRIENCES */
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 0.5rem;
+  border-left: 4px solid transparent;
+  transition: all 0.2s ease;
+}
+
+/* Effet 1 du brief au survol */
+.timeline-item:hover {
+  background-color: #f5f5f5;
+  border-left: 4px solid #17abb3;
+}
+
+.timeline-item h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.timeline-item .place {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.timeline-item .date {
+  color: #17abb3;
+  font-size: 0.9rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* PIED DE PAGE */
+footer {
+  background-color: #17abb3;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.social-links {
+  margin-bottom: 0.6rem;
+}
+
+.social-links a {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin: 0 0.6rem;
+  transition: opacity 0.2s ease;
+}
+
+/* Effet 3 du brief au survol */
+.social-links a:hover {
+  opacity: 0.7;
+}
+
+.update-date {
+  font-size: 0.85rem;
+  font-style: italic;
+}
